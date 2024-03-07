@@ -19,8 +19,8 @@
               src="https://images.pexels.com/photos/2242207/pexels-photo-2242207.jpeg"
               height="670px"
             >
-              <div class="fill-height d-flex justify-center flex-column pa-15">
-                <v-card-title> Crie o SEU DESTINO</v-card-title>
+              <div class="fill-height d-flex justify-center flex-column pa-15 mx-10 my-12">
+                <v-card-title class="custom-title font-weight-bold"> Crie o SEU DESTINO</v-card-title>
 
                 <v-btn
                   rounded="xl"
@@ -233,5 +233,10 @@ const { mdAndUp } = useDisplay();
 }
 .hover-effect:hover {
   transform: scale(1.05);
+}
+
+.custom-title {
+  font-size: 62px;
+  color: white;
 }
 </style>
