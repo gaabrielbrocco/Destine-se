@@ -1,9 +1,7 @@
 <template>
   <v-app theme="">
     <v-app-bar flat class="border-b" color="white">
-      <v-app-bar-nav-icon
-        @click="isDrawerOpen = !isDrawerOpen"
-      ></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon></v-app-bar-nav-icon>
       <v-app-bar-title class="poppins-semibold">
         <h2>Destine-se</h2>
       </v-app-bar-title>
@@ -19,10 +17,14 @@
               src="https://images.pexels.com/photos/2242207/pexels-photo-2242207.jpeg"
               height="670px"
             >
-              <div class="fill-height d-flex justify-center flex-column pa-15 mx-10 my-12">
-                <v-card-title class="custom-title font-weight-bold"> Crie o SEU DESTINO</v-card-title>
+              <div
+                class="fill-height d-flex justify-center flex-column pa-16 mx-10 my-6"
+              >
+                <v-card-title class="custom-title font-weight-bold">
+                  Crie o seu DESTINO</v-card-title
+                >
 
-                <v-btn
+                <!-- <v-btn
                   rounded="xl"
                   class="btn-hover"
                   variant="outlined"
@@ -31,7 +33,7 @@
                   width="200"
                 >
                   Teste
-                </v-btn>
+                </v-btn> -->
               </div>
             </v-img>
           </v-card>
@@ -171,16 +173,50 @@
           </div>
         </v-container>
       </section>
-
-      <v-section id="id2">
-        <v-container
-          class="pa-0 mt-15"
-          fluid
-          style="background-color: #f3f3f3; height: 70dvh"
-        >
-        </v-container>
-      </v-section>
     </v-main>
+    <v-footer class="text-center d-flex flex-column align-center">
+      <div>
+        <v-row>
+          <v-btn
+            prepend-icon="mdi-instagram"
+            href="https://instagram.com/gaabrielbrocco"
+            title="Perfil"
+            class="mb-5"
+            variant="text"
+          ></v-btn>
+          <v-btn
+            prepend-icon="mdi-linkedin"
+            href="https://www.linkedin.com/in/gabrielbrocco"
+            title="Linkedin"
+            class="mb-5"
+            variant="text"
+          ></v-btn>
+          <v-btn
+            prepend-icon="mdi-twitter"
+            href="https://x.com/gaabrielbrocco"
+            title="Twitter"
+            class="mb-5"
+            variant="text"
+          ></v-btn>
+          <v-btn
+            prepend-icon="mdi-email"
+            href="mailto:gabsbrocco@gmail.com"
+            title="Email"
+            class="mb-5"
+            variant="text"
+          ></v-btn>
+
+        </v-row>
+      </div>
+
+      <div class="pt-0">
+        Dashboard simples de uma página Web como exemplo para empresa de viagens. Desenvolvida para evoluir conhecimentos utilizando Vue 3 e Vutify.
+      </div>
+
+      <v-divider></v-divider>
+
+      <div>{{ new Date().getFullYear() }} — <strong>G B O</strong></div>
+    </v-footer>
   </v-app>
 </template>
 
